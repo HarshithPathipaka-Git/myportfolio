@@ -1,33 +1,286 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshith Pathipaka | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshith Pathipaka - Portfolio</title>
+    <meta name="description" content="Professional portfolio of Harshith Pathipaka, a fresh B.Tech graduate showcasing skills, education, current training, and projects.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>Hi, I'm Harshith 👋</h1>
-    <p>B.Tech CSE | Python Learner | Future Innovator</p>
-  </header>
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m passionate about technology, coding, and automation. I love solving problems and learning new tools every day.</p>
-  </section>
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li>💻 Python Automation Scripts</li>
-      <li>🌐 Personal Portfolio Website</li>
-      <li>⚙️ DevOps Practice Environment</li>
-    </ul>
-  </section>
-  <footer>
-    <p>Connect with me:
-      <a href="mailto:harshithkumarpathipaka@gmail.com">Email</a> |
-      <a href="https://github.com/harshithpathipaka-git" target="_blank">GitHub</a>
-    </p>
-  </footer>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">HP</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-greeting">Welcome to my portfolio</p>
+            <h1 class="hero-name">Harshith Pathipaka</h1>
+            <p class="hero-title">B.Tech Fresher | Path To Coder</p>
+            <p class="hero-tagline">Find solutions with passion and precision</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">Sample Projects →</a>
+                <a href="#contact" class="btn btn-outline">Get In Touch</a>
+            </div>
+            <span class="hero-badge">Available For Internship Opportunities</span>
+        </div>
+        <div class="scroll-indicator">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planning  Projects</h2>
+                <p>Click on any project to view detailed information</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-project="0">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w=800&h=600&fit=crop" alt="E-Commerce Platform">
+                    </div>
+                    <div class="project-content">
+                        <h3>E-Commerce Platform</h3>
+                        <p>Full-stack online shopping platform with payment integration, user authentication, and admin dashboard.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Node.js</span>
+                            <span class="tech-badge">MongoDB</span>
+                        </div>
+                        <p class="project-link">Click to view details →</p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&h=600&fit=crop" alt="Task Management App">
+                    </div>
+                    <div class="project-content">
+                        <h3>Task Management App</h3>
+                        <p>Collaborative project management tool with real-time updates, drag-and-drop interface, and team collaboration.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">React</span>
+                            <span class="tech-badge">Firebase</span>
+                            <span class="tech-badge">Tailwind CSS</span>
+                        </div>
+                        <p class="project-link">Click to view details →</p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=800&h=600&fit=crop" alt="Weather Dashboard">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Dashboard</h3>
+                        <p>Real-time weather monitoring application with location-based forecasts and interactive maps.</p>
+                        <div class="project-tech">
+                            <span class="tech-badge">JavaScript</span>
+                            <span class="tech-badge">OpenWeather API</span>
+                            <span class="tech-badge">Chart.js</span>
+                        </div>
+                        <p class="project-link">Click to view details →</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a passionate B.Tech Computer Science student with a strong interest in coding, front-end development, and automation. My journey in technology is driven by curiosity, creativity, and a desire to innovate through real-world problem solving.</p>
+                    <p>As a learner, I’m building a strong foundation in Python, programming logic, and modern web technologies, while continuously exploring new tools and frameworks. I enjoy experimenting with projects that enhance my technical and analytical skills.</p>
+                    <p>I’m eager to collaborate on innovative ideas, learn from experienced developers, and grow into a skilled software engineer who contributes meaningfully to the tech community.</p>
+                </div>
+            </div>
+            
+            <div class="education-section">
+                <h3>Education</h3>
+                <div class="education-card">
+                    <h4>B.Tech in Computer Science AIML</h4>
+                    <p class="institution">SR UNIVERSITY WARANGAL ,TELANGANA </p>
+                    <p class="year">2025-2029</p>
+                    <p class="gpa">GPA:LOADING</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skills & Technologies</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Frontend</h3>
+                    <P>Currently learning</P>
+                    <!-- <div class="skills-list">
+                        <span class="skill-item">React</span>
+                        <span class="skill-item">JavaScript</span>
+                        <span class="skill-item">TypeScript</span>
+                        <span class="skill-item">HTML5</span>
+                        <span class="skill-item">CSS3</span>
+                        <span class="skill-item">Tailwind CSS</span>
+                    </div> -->
+                </div>
+                <div class="skill-category">
+                    <h3>Backend</h3>
+                    <P > Basics Completed</P>
+                    <!-- <div class="skills-list">
+                        <span class="skill-item">Node.js</span>
+                        <span class="skill-item">Express</span>
+                        <span class="skill-item">MongoDB</span>
+                        <span class="skill-item">PostgreSQL</span>
+                        <span class="skill-item">REST APIs</span>
+                    </div> -->
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Others</h3>
+                    <div class="skills-list">
+                        <span class="skill-item">Git</span>
+                        <span class="skill-item">GitHub</span>
+                        <span class="skill-item">VS Code</span>
+                        <!-- <span class="skill-item">Figma</span>
+                        <span class="skill-item">Firebase</span> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>I'm currently seeking connection opportunities. Let's connect!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Email</h4>
+                        <p>harshithkumarpathipaka@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Phone</h4>
+                        <p>+91 9398643185</p>
+                    <div class="contact-item">
+                        <h4>Location</h4>
+                        <p>Warangal , Telangana</p>
+                    </div>
+                    <div class="contact-item">
+                        <h4>Connect</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/HarshithPathipaka-Git" target="_blank" class="social-link">GitHub</a>
+                            <a href="https://linkedin.com/in/harshithpathipaka" target="_blank" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p>Connect, contribute, learn, and grow.</p>
+            <a href="#contact" class="btn btn-secondary">Start a Conversation →</a>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div id="projectModal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody"></div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Harshith Pathipaka</h3>
+                    <p>B.Tech Fresher | Path To Coder</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="https://github.com/harshithpathipaka" target="_blank">GitHub</a></li>
+                        <li><a href="https://linkedin.com/in/harshithpathipaka" target="_blank">LinkedIn</a></li>
+                        <li><a href="mailto:harshith@example.com">Email</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Harshith Pathipaka. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
